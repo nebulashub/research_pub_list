@@ -1,0 +1,213 @@
+\documentclass[12pt]{article}
+
+\input{common.tex}
+\usepackage[flushleft]{threeparttable}
+\usepackage{longtable}
+
+\usepackage{array,etoolbox}
+%\preto\tabular{\setcounter{magicrownumbers}{0}}
+\newcounter{magicrownumbers}
+\setcounter{magicrownumbers}{0}
+\newcommand\rownumber{\stepcounter{magicrownumbers}\arabic{magicrownumbers}}
+
+\begin{document}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}m{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}m{#1}}
+
+\pagestyle{empty}
+
+\pagecolor{\pcolor}
+
+\begin{titlepage}
+  \begin{center}
+    \vspace*{5.5cm}
+    \includegraphics[scale=0.5]{Nebulas.png}
+    \vspace{0.5cm}
+
+
+    \textbf{\huge{Nebulas Research Publication List}}
+
+    \vspace{0.5cm}
+    Nebulas Research
+    \vfill
+    June 2019\\
+    \textbf{}
+  \end{center}
+
+\end{titlepage}
+\setcounter{page}{0}
+\newpage
+\setcounter{page}{1}
+\pagestyle{fancy}
+\vspace*{0.01cm}
+\section{Computer Science Conferences List}
+
+\centering
+\begin{tabular}{|@{\makebox[3em][c]{\rownumber\space}}|C{.5\textwidth}|c|c|}
+\hline \hline
+  \multicolumn{1}{|@{\makebox[3em][c]{No.}}
+  |c|}{English Name} & {Abbreviation} & Remark\\
+  \hline
+  Annual Symposium on Foundations of Computer Science & FOCS & TH
+  \\
+  \hline
+  ACM Symposium on Theory of Computing & STOC & TH \\
+  \hline
+  The Annual International Conference of the ACM Special Interest
+  Group on Data Communication & SIGCOMM & NT \\
+  \hline
+  International Cryptology Conference & CRYPTO & CR \\ \hline
+  ACM Symposium on Operating Systems Principles /USENIX Symposium on Operating
+  Systems Design and Implementation & SOSP/OSDI & SY \\ \hline
+  ACM-SIAM Symposium on Discrete Algorithms & SODA & TH \\ \hline
+  Integer Programming and Combinatorial Optimization & IPCO & TH \\ \hline
+  International Colloquium on Automata, Languages and Programming & ICALP & TH
+  \\ \hline
+  Innovations in Theoretical Computer Science & ITCS & TH \\ \hline
+  Intl. Symp on Symbolic and Algebraic Computation & ISSAC & TH \\ \hline
+  IEEE Symposium on Logic in Computer Science & LICS & TH \\ \hline
+  Annual International Conference on the Theory and Applications of
+  Cryptographic Techniques & EuroCrypt & CR \\ \hline
+  IEEE Symposium on Security and Privacy & S\&P & CR \\ \hline
+  ACM Conference on Computer and Communications Security & CCS & CR \\ \hline
+  Usenix Security Symposium & Usenix Security & CR \\ \hline
+  Network and Distributed System Security Symposium & NDSS & CR \\ \hline
+  ACM-SIGPLAN Conference on Programming Language Design and Implementation &
+  PLDI & SY \\ \hline
+  International Symposium on Computer Architecture & ISCA & SY \\ \hline
+\end{tabular}
+
+\begin{tabular}{|@{\makebox[3em][c]{\rownumber\space}}|C{.5\textwidth}|c|c|}
+\hline
+  \multicolumn{1}{|@{\makebox[3em][c]{No.}}
+  |c|}{English Name} & {Abbreviation} & Remark\\
+  \hline
+  International Symposium on Microarchitecture & MICRO & SY \\ \hline
+  International Conference on Architectural Support for Programming Languages
+  and Operating Systems & ASPLOS & SY \\ \hline
+  USENIX Symposium on Networked Systems, Design and Implementation & NSDI &
+  SY/NT \\ \hline
+  ACM Conference on Embedded Networked Sensor Systems & SenSys & SY/NT \\
+  \hline
+  The European Conference on Computer Systems & EuroSys & SY/NT \\ \hline
+  ACM Conference on Measure \& Modelling of Computer Systems & SIGMETRIC &
+  SY/NT \\ \hline
+  International Conference on Mobile Computing and Networking & MOBICOM & NT \\
+  \hline
+  The International Conference on Mobile Systems, Applications, and Services &
+  MOBISYS & NT \\ \hline
+  ACM Symposium on Parallelism in Algorithms and Architectures & SPAA & SY \\
+  \hline
+  ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing & PODC &
+  NT \\ \hline
+  International Conference on Information Processing in Sensor Networks & IPSN
+  & NT \\ \hline
+  ACM International Symposium on Mobile Ad Hoc Networking and Computing &
+  MOBIHOC & NT \\ \hline
+  International Symposium on Computer Performance, Modeling, Measurements and
+  Evaluation & IFIP Performance &  \\ \hline
+  IEEE International Conference on Computer Communications & INFOCOM & NT \\
+  \hline
+  ACM Special Interest Group on Management Of Data & SIGMOD & DB \\ \hline
+  International Conference on Very Large Data Bases & VLDB & DB \\ \hline
+  International Conference on Data Engineering & ICDE & DB \\ \hline
+  ACM SIGMOD-SIGACT-SIGART Symposium on Principles of Database Systems & PODS &
+  DB/TH \\ \hline
+  Data Compression Conference & DCC & \\ \hline
+  Computational Learning Theory & COLT & ML/TH \\ \hline
+
+  Advances in Neural Information Processing Systems & NIPS & ML \\ \hline
+\end{tabular}
+
+\begin{table}
+  \begin{threeparttable}
+  \begin{tabular}{|@{\makebox[3em][c]{\rownumber\space}}|C{.5\textwidth}|c|c|}
+\hline
+  \multicolumn{1}{|@{\makebox[3em][c]{No.}}
+  |c|}{English Name} & {Abbreviation} & Remark\\
+  \hline
+  International Conference on Machine Learning & ICML & ML \\ \hline
+  International Conference on Learning Representations & ICLR & ML \\ \hline
+  International Joint Conferences on Artificial Intelligence & IJCAI & AI \\
+  \hline
+  Conference on Artificial Intelligence & AAAI & AI \\ \hline
+  UAI: Conference on Uncertainty in AI & UAI & AI \\ \hline
+  International Conference on Autonomous Agents and Multiagent Systems & AAMAS
+  & AI \\ \hline
+  The annual ACM SIGKDD conference & KDD & DM \\ \hline
+  International World Wide Web Conference & WWW & Web \\ \hline
+  ACM Conference on economics and computation & ACM EC & Econ/TH/AI \\ \hline
+  ACM Multimedia Conference & ACM-MM & MM \\ \hline
+  IEEE Real-Time Systems Symposium & RTSS & SY \\ \hline
+  USENIX Annual Technical Conference & ATC & SY \\ \hline
+  ACM Symposium on Cloud Computing & SoCC & SY \\ \hline
+  USENIX Conference on File and Storage Technologies & FAST & SY \\ \hline
+  The International Conference for High Performance Computing, Networking,
+  Storage and Analysis & SC & SY \\ \hline
+  The International Conference on Dependable Systems and Networks & DSN & NT/SY
+  \\ \hline
+  International Conference on Ubiquitous Computing & UbiComp & SY/NT \\ \hline
+  Theory of Cryptography Conference & TCC & CR \\ \hline
+  IEEE International Symposium on High-Performance Computer Architecture & HPCA
+  & SY \\ \hline
+  Symposium on Principles and Practice of Parallel Programming & PPoPP & SY \\
+  \hline
+  \hline
+
+\end{tabular}
+\begin{tablenotes}
+\item TH: Theory (Including Algorithms/Complexity/Discrete
+  Math/Logic/Operations Research)
+\item CR: Cryptography/Security/Privacy
+\item NT: Networking/Distributed \& Parallel Computing/Communication
+\item SY: Systems/Operating Systems/Computer Architecture
+\item DB: Databases
+\item DM: Data Mining
+\item ML: Machine Learning
+\item Other: Economics/Internet
+\end{tablenotes}
+  \end{threeparttable}
+\end{table}
+
+\section{Journal List}
+
+\setcounter{magicrownumbers}{0}
+\centering
+\begin{tabular}{|@{\makebox[3em][c]{\rownumber\space}}|C{.7\textwidth}|c|}
+\hline \hline
+  \multicolumn{1}{|@{\makebox[3em][c]{No.}}
+  |c|}{English} & {Abbreviation} \\
+  \hline
+  Nature (and sub-journal) & Nature \\ \hline
+  Science & Science \\ \hline
+  Journal of the Association for Computing Machinery & JACM \\ \hline
+  Communication of the ACM & CACM \\ \hline
+  Proceedings of the National Academy of Sciences of the United States of
+  America & PNAS \\ \hline \hline
+  SIAM Jnl on Computing & SICOMP \\ \hline
+  Journal of Computer and System Sciences & JCSS \\ \hline
+  ACM Trans on Algorithms & TALGO \\ \hline
+  Discrete \& Computational Geometry & DCG \\ \hline
+  Computational Complexity & CC \\ \hline
+  Information \& Computation & \\ \hline
+  ACM Trans on Computational Logic & TOCL \\ \hline
+  Theory of Computing & ToC \\ \hline
+  Journal of Cryptology & \\ \hline
+  IEEE/ACM Transactions on Networking & TON \\ \hline
+  IEEE Trans on Communications & TOC \\ \hline
+  IEEE Jnl on Selected Areas in Communication & JSAC \\ \hline
+  IEEE Transactions on Mobile Computing & TMC \\ \hline
+  ACM Trans on Sensor Networks & TSN \\ \hline
+  ACM Trans on Computer Systems & \\ \hline
+  Theory in Computer Systems & TOCS \\ \hline
+  IEEE Trans on Parallel and Distributed Systems & TPDS \\ \hline
+  Distributed Computing & \\ \hline
+  ACM Trans on Programming Languages \& Systems & TPLS \\ \hline
+  The VLDB Journal & VLDBJ \\ \hline
+  ACM Transactions on Database Systems & TODS \\ \hline
+  IEEE Transactions on Computers & TC \\ \hline
+
+\end{tabular}
+
+\end{document}
