@@ -3,6 +3,7 @@
 \input{common.tex}
 \usepackage[flushleft]{threeparttable}
 \usepackage{longtable}
+\usepackage{soul}
 
 \usepackage{array,etoolbox}
 %\preto\tabular{\setcounter{magicrownumbers}{0}}
@@ -66,13 +67,13 @@
   \\ \hline
   Innovations in Theoretical Computer Science & ITCS & TH \\ \hline
   Intl. Symp on Symbolic and Algebraic Computation & ISSAC & TH \\ \hline
-  %IEEE Symposium on Logic in Computer Science & LICS & TH \\ \hline
+  \st{IEEE Symposium on Logic in Computer Science} & LICS & TH \\ \hline
   Annual International Conference on the Theory and Applications of
   Cryptographic Techniques & EuroCrypt & CR \\ \hline
-  %IEEE Symposium on Security and Privacy & S\&P & CR \\ \hline
+  \st{IEEE Symposium on Security and Privacy} & S\&P & CR \\ \hline
   ACM Conference on Computer and Communications Security & CCS & CR \\ \hline
   Usenix Security Symposium & Usenix Security & CR \\ \hline
-  Network and Distributed System Security Symposium & NDSS & CR \\ \hline
+  \st{Network and Distributed System Security Symposium} & NDSS & CR \\ \hline
   ACM-SIGPLAN Conference on Programming Language Design and Implementation &
   PLDI & SY \\ \hline
   International Symposium on Computer Architecture & ISCA & SY \\ \hline
@@ -83,7 +84,7 @@
   \multicolumn{1}{|@{\makebox[3em][c]{No.}}
   |c|}{English Name} & {Abbreviation} & Remark\\
   \hline
-  International Symposium on Microarchitecture & MICRO & SY \\ \hline
+  \st{International Symposium on Microarchitecture} & MICRO & SY \\ \hline
   International Conference on Architectural Support for Programming Languages
   and Operating Systems & ASPLOS & SY \\ \hline
   USENIX Symposium on Networked Systems, Design and Implementation & NSDI &
@@ -107,14 +108,14 @@
   MOBIHOC & NT \\ \hline
   International Symposium on Computer Performance, Modeling, Measurements and
   Evaluation & IFIP Performance &  \\ \hline
-  %IEEE International Conference on Computer Communications & INFOCOM & NT \\
+  \st{IEEE International Conference on Computer Communications} & INFOCOM & NT \\
   \hline
   ACM Special Interest Group on Management Of Data & SIGMOD & DB \\ \hline
   International Conference on Very Large Data Bases & VLDB & DB \\ \hline
-  International Conference on Data Engineering & ICDE & DB \\ \hline
+  \st{International Conference on Data Engineering} & ICDE & DB \\ \hline
   ACM SIGMOD-SIGACT-SIGART Symposium on Principles of Database Systems & PODS &
   DB/TH \\ \hline
-  Data Compression Conference & DCC & \\ \hline
+  \st{Data Compression Conference} & DCC & \\ \hline
   Computational Learning Theory & COLT & ML/TH \\ \hline
 
   Advances in Neural Information Processing Systems & NIPS & ML \\ \hline
@@ -139,18 +140,18 @@
   International World Wide Web Conference & WWW & Web \\ \hline
   ACM Conference on economics and computation & ACM EC & Econ/TH/AI \\ \hline
   ACM Multimedia Conference & ACM-MM & MM \\ \hline
-  %IEEE Real-Time Systems Symposium & RTSS & SY \\ \hline
+  \st{IEEE Real-Time Systems Symposium} & RTSS & SY \\ \hline
   USENIX Annual Technical Conference & ATC & SY \\ \hline
   ACM Symposium on Cloud Computing & SoCC & SY \\ \hline
   USENIX Conference on File and Storage Technologies & FAST & SY \\ \hline
-  The International Conference for High Performance Computing, Networking,
-  Storage and Analysis & SC & SY \\ \hline
-  The International Conference on Dependable Systems and Networks & DSN & NT/SY
+  \st{The International Conference for High Performance Computing, Networking,
+  Storage and Analysis} & SC & SY \\ \hline
+  \st{The International Conference on Dependable Systems and Networks} & DSN & NT/SY
   \\ \hline
   International Conference on Ubiquitous Computing & UbiComp & SY/NT \\ \hline
   Theory of Cryptography Conference & TCC & CR \\ \hline
-  %IEEE International Symposium on High-Performance Computer Architecture & HPCA
-  %& SY \\ \hline
+  \st{IEEE International Symposium on High-Performance Computer Architecture} & HPCA
+  & SY \\ \hline
   Symposium on Principles and Practice of Parallel Programming & PPoPP & SY \\
   \hline
   \hline
@@ -194,20 +195,25 @@
   ACM Trans on Computational Logic & TOCL \\ \hline
   Theory of Computing & ToC \\ \hline
   Journal of Cryptology & \\ \hline
-  %IEEE/ACM Transactions on Networking & TON \\ \hline
-  %IEEE Trans on Communications & TOC \\ \hline
-  %IEEE Jnl on Selected Areas in Communication & JSAC \\ \hline
-  %IEEE Transactions on Mobile Computing & TMC \\ \hline
+  \st{IEEE/ACM Transactions on Networking} & TON \\ \hline
+  \st{IEEE Trans on Communications} & TOC \\ \hline
+  \st{IEEE Jnl on Selected Areas in Communication} & JSAC \\ \hline
+  \st{IEEE Transactions on Mobile Computing} & TMC \\ \hline
   ACM Trans on Sensor Networks & TSN \\ \hline
   ACM Trans on Computer Systems & \\ \hline
   Theory in Computer Systems & TOCS \\ \hline
-  %IEEE Trans on Parallel and Distributed Systems & TPDS \\ \hline
+  \st{IEEE Trans on Parallel and Distributed Systems} & TPDS \\ \hline
   %Distributed Computing & \\ \hline
   ACM Trans on Programming Languages \& Systems & TPLS \\ \hline
   The VLDB Journal & VLDBJ \\ \hline
   ACM Transactions on Database Systems & TODS \\ \hline
-  %IEEE Transactions on Computers & TC \\ \hline
+  \st{IEEE Transactions on Computers} & TC \\ \hline
 
 \end{tabular}
+
+
+\begin{tablenotes}
+\item Statement: Since IEEE forced to ban Huawei employees from peer-reviewing papers which completely violates the scientific spirit, we remove all conferences and journals published by IEEE. %who claimed to be free of discrimination. 
+\end{tablenotes}
 
 \end{document}
